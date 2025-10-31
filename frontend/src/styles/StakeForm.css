@@ -1,0 +1,114 @@
+.stake-card {
+  background: rgba(30, 41, 59, 0.75);
+  border: 1px solid rgba(148, 163, 184, 0.25);
+  border-radius: 1rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.card-description {
+  margin: 0;
+  color: rgba(226, 232, 240, 0.8);
+}
+
+.inline-form {
+  display: flex;
+  align-items: flex-end;
+  gap: 1rem;
+}
+
+.field {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.field-label {
+  font-size: 0.95rem;
+  color: rgba(226, 232, 240, 0.8);
+}
+
+.field-input {
+  background: rgba(15, 23, 42, 0.75);
+  border: 1px solid rgba(148, 163, 184, 0.3);
+  border-radius: 0.75rem;
+  color: #f8fafc;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+}
+
+.field-input:focus {
+  outline: none;
+  border-color: #38bdf8;
+  box-shadow: 0 0 0 1px rgba(56, 189, 248, 0.35);
+}
+
+.primary-button,
+.secondary-button,
+.ghost-button {
+  border-radius: 0.75rem;
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+.primary-button {
+  background: linear-gradient(135deg, #6366f1 0%, #22d3ee 100%);
+  color: #0f172a;
+}
+
+.secondary-button {
+  background: rgba(148, 163, 184, 0.15);
+  color: #e2e8f0;
+  border: 1px solid rgba(148, 163, 184, 0.35);
+}
+
+.ghost-button {
+  background: transparent;
+  border: 1px solid rgba(148, 163, 184, 0.3);
+  color: #e2e8f0;
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+}
+
+.primary-button:disabled,
+.secondary-button:disabled,
+.ghost-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.primary-button:not(:disabled):hover,
+.secondary-button:not(:disabled):hover,
+.ghost-button:not(:disabled):hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 30px rgba(30, 64, 175, 0.25);
+}
+
+.status-message {
+  margin: 0;
+  color: #facc15;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 640px) {
+  .inline-form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .primary-button,
+  .secondary-button {
+    width: 100%;
+  }
+}

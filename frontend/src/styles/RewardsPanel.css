@@ -1,0 +1,55 @@
+.rewards-card {
+  background: rgba(30, 41, 59, 0.75);
+  border: 1px solid rgba(148, 163, 184, 0.25);
+  border-radius: 1rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.card-subtitle {
+  margin: 0.5rem 0 0;
+  color: rgba(226, 232, 240, 0.75);
+}
+
+.encrypted-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+}
+
+.rewards-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer-label {
+  display: block;
+  font-size: 0.9rem;
+  color: rgba(148, 163, 184, 0.85);
+}
+
+.footer-value {
+  font-weight: 600;
+}
+
+@media (max-width: 640px) {
+  .rewards-footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .primary-button {
+    width: 100%;
+  }
+}
