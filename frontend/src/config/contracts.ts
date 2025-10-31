@@ -1,5 +1,5 @@
 export const STAKING_CONTRACT = {
-  address: '0x0000000000000000000000000000000000000000',
+  address: '0x6216A738d4D26Ce7C1DfB4e702E4ddcF87aBD996',
   abi: [
     {
       inputs: [{ internalType: 'address', name: 'zcoinAddress', type: 'address' }],
@@ -90,7 +90,7 @@ export const STAKING_CONTRACT = {
 } as const;
 
 export const ZCOIN_CONTRACT = {
-  address: '0x0000000000000000000000000000000000000000',
+  address: '0x11EB0032697E4e92F4027f91B53a95bD0AE4212D',
   abi: [
     {
       inputs: [],
